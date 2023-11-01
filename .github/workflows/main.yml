@@ -1,5 +1,4 @@
 name: Star
-
 on:
 
   push:
@@ -21,7 +20,7 @@ jobs:
       - name: Modify last update
         run: |
           d='DATE '`date '+%Y-%m-%d %H:%M:%S'`
-          echo $d > Atomic
+          echo $d > output.txt
           
       - name: Commit changes
         run: | 
